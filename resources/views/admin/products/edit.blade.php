@@ -107,7 +107,7 @@
                                 <label for="price" class="block text-sm font-medium text-gray-700">Price <span class="text-red-500">*</span></label>
                                 <div class="mt-1 relative rounded-md shadow-sm">
                                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <span class="text-gray-500 sm:text-sm">$</span>
+                                        <span class="text-gray-500 sm:text-sm">₦</span>
                                     </div>
                                     <input type="number" step="0.01" min="0" name="price" id="price" value="{{ old('price', $product->price) }}" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm py-3 px-4 pl-7 border @error('price') border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 @enderror" placeholder="0.00" required>
                                 </div>
@@ -121,7 +121,7 @@
                                 <label for="discount_price" class="block text-sm font-medium text-gray-700">Discount Price</label>
                                 <div class="mt-1 relative rounded-md shadow-sm">
                                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <span class="text-gray-500 sm:text-sm">$</span>
+                                        <span class="text-gray-500 sm:text-sm"> ₦</span>
                                     </div>
                                     <input type="number" step="0.01" min="0" name="discount_price" id="discount_price" value="{{ old('discount_price', $product->discount_price) }}" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm py-3 px-4 pl-7 border @error('discount_price') border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 @enderror" placeholder="0.00">
                                 </div>
@@ -224,16 +224,16 @@
                     </div>
 
                     <!-- Gallery Images Section -->
-                    <div class="space-y-6">
+<!--                     <div class="space-y-6">
                         <div>
                             <h2 class="text-xl font-semibold text-gray-900">Gallery Images</h2>
                             <p class="mt-1 text-sm text-gray-500">Additional product photos</p>
                         </div>
                         
                         <div class="sm:col-span-6">
-                            <div class="flex flex-col sm:flex-row gap-6">
+                            <div class="flex flex-col sm:flex-row gap-6"> -->
                                 <!-- Current Gallery Images -->
-                                <div class="w-full sm:w-1/3">
+<!--                                 <div class="w-full sm:w-1/3">
                                     <label class="block text-sm font-medium text-gray-700 mb-2">Current Gallery</label>
                                     @if($product->gallery_images && count(json_decode($product->gallery_images)))
                                         <div class="grid grid-cols-2 gap-2">
@@ -248,10 +248,10 @@
                                             <span class="text-gray-500 text-sm">No gallery images</span>
                                         </div>
                                     @endif
-                                </div>
+                                </div> -->
                                 
                                 <!-- New Gallery Images Upload -->
-                                <div class="w-full sm:w-2/3">
+<!--                                 <div class="w-full sm:w-2/3">
                                     <label for="gallery_images" class="block text-sm font-medium text-gray-700 mb-2">Update Gallery</label>
                                     <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-xl">
                                         <div class="space-y-1 text-center">
@@ -279,7 +279,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Sizes and Colors Section -->
                     <div class="space-y-6">
